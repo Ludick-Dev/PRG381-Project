@@ -17,41 +17,70 @@ import jakarta.persistence.GenerationType;
 public class Student {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
-    private String studentname;
-    private String course;
-    private int fee;
+    private Long studentID;
+    private String studentName;
+    private String studentAddress;
+    private String email;
+    private String password;
+    private String courseName;
     public Student() {
     }
-    public Student(Long id, String studentname, String course, int fee) {
+
+    public Student(Long studentID, String studentName, String studentAddress, String email, String password, String courseName) {
+        this.studentID = studentID;
+        this.studentName = studentName;
+        this.studentAddress = studentAddress;
+        this.email = email;
+        this.password = password;
+        this.courseName = courseName;
+    }
+
+    public Long getStudentID() {
+        return studentID;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public String getStudentAddress() {
+        return studentAddress;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setStudentID(Long studentID) {
+        this.studentID = studentID;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public void setStudentAddress(String studentAddress) {
+        this.studentAddress = studentAddress;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
     
-        this.id = id;
-        this.studentname = studentname;
-        this.course = course;
-        this.fee = fee;
-    }
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public String getStudentname() {
-        return studentname;
-    }
-    public void setStudentname(String studentname) {
-        this.studentname = studentname;
-    }
-    public String getCourse() {
-        return course;
-    }
-    public void setCourse(String course) {
-        this.course = course;
-    }
-    public int getFee() {
-        return fee;
-    }
-    public void setFee(int fee) {
-        this.fee = fee;
-    }
 }
