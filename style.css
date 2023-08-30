@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -16,38 +16,52 @@ body {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.container.wide {
+    width: 1000px;
+}
+
 .container h2 {
+    font-family: 'Poppins', Arial, sans-serif;
     margin-bottom: 20px;
 }
 
 .container form {
+    font-family: 'Poppins', Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 .container input {
+    font-family: 'Poppins', Arial, sans-serif;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.container button {
-    padding: 10px;
+.container a{
+    font-family: 'Poppins', Arial, sans-serif;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.container a {
+.container button{
+    font-family: 'Poppins', Arial, sans-serif;
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .admin-section {
@@ -55,6 +69,7 @@ body {
 }
 
 .admin-section input[type="text"] {
+    font-family: 'Poppins', Arial, sans-serif;
     width: 70%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -62,7 +77,9 @@ body {
 }
 
 .admin-section button {
+    font-family: 'Poppins', Arial, sans-serif;
     padding: 10px;
+    margin-bottom: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -72,6 +89,7 @@ body {
 }
 
 table {
+    font-family: 'Poppins', Arial, sans-serif;
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
