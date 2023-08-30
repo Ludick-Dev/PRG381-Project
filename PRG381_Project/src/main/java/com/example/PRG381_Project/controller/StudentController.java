@@ -30,10 +30,10 @@ public class StudentController {
             System.out.print("Get / ");    
             return "index";
         }
-        @GetMapping("/new")
+        @GetMapping("/register")
         public String add(Model model) {
             model.addAttribute("student", new Student());
-            return "new";
+            return "register";
         }
         @RequestMapping(value = "/save", method = RequestMethod.POST)
         public String saveStudent(@ModelAttribute("student") Student std) {
