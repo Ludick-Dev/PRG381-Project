@@ -1,60 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
-    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-<div>
-    <h2 >Spring Boot Crud System -Student Registration</h2>
-    <tr>
-        <div align = "left" >           
-             <h3><a  th:href="@{'/register'}">Add new</a></h3>     
+    <body>
+        <div class="container">
+            <h2>Login</h2>
+            <form action="#">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button>Login</button>
+                <button>Login as Admin</button>
+            </form>
+            <button><a href="register.html">Register</a></button>
         </div>
-    
-    </tr>
-    <tr>
-    
-    <div class="col-sm-5" align = "center">
-                 <div class="panel-body" align = "center" >
-                 <table class="table">
-  <thead class="thead-dark">
-    <tr>
-              <th>Student ID</th>
-            <th>Student Name</th>
-            <th>Course</th>
-            <th>Fee</th>
-            <th>Edit</th>
-            <th>Delete</th>
-       </tr>
-  </thead>
-  <tbody>
-      <tr  th:each="student : ${liststudent }">
-        <td th:text="${student.id}">Student ID</td>
-        <td th:text="${student.studentname}">Student Name</td>
-        <td th:text="${student.course}">Course</td>
-        <td th:text="${student.fee}">Fee</td>                
-        <td>
-            <a th:href="@{'/edit/' + ${student.id}}">Edit</a>
-        </td>                                
-        <td>
-            <a th:href="@{'/delete/' + ${student.id}}">Delete</a>
-        </td>            
-        </tr> 
-   
-  </tbody>
-</table>
-                    
-                 </div>
+    </body>
 
-            </div> 
-
-    </tr>
-
-    </tbody>
-    </table>
-    <div>
-</body>
 </html>
