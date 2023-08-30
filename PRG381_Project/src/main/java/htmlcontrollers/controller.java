@@ -15,7 +15,7 @@ public class controller {
     public String showRegistrationPage() {
         return "register"; 
     }
-
+    
     @GetMapping("/admin")
     public String showLoginPage() {
         return "admin";
