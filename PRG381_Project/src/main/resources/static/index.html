@@ -11,11 +11,11 @@
     <body>
         <div class="container">
             <h2>Login</h2>
-            <form action="#">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button>Login</button>
-                <button>Login as Admin</button>
+            <form th:action="@{/main}" th:object="${admin}" method="post">
+                <input type="text" placeholder="Username" required th:field="*{username}">
+                <input type="password" placeholder="Password" required th:field="*{password}">
+                <button type="submit">Login</button>
+                <button type="submit">Login as Admin</button>
             </form>
             <button><a href="register.html">Register</a></button>
         </div>
